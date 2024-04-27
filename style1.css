@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+    font-family: system-ui;
+}
+div .container{
+    width: 1000px;
+    margin: auto;
+    transition: 0.5s;
+}
+div .container h2{
+    color: slateblue;
+    font-weight: 800;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+#productForm{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: skyblue;
+    box-shadow: 0 5px 15px rgba(0,0,0,0);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#productForm button{
+    background-color:  transparent;
+    color:brown;
+    border:0;
+    padding: 0px 10px 0px 10px;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    font-weight:700;
+    font-size:15px;
+}

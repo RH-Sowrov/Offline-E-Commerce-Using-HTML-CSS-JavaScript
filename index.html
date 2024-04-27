@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AddP.html">
+    <link rel="stylesheet" href="indexedDb.html">
+    <link rel="stylesheet" href="localstorage.html">
+    <link rel="stylesheet" href="session.html">
+    <link rel="stylesheet" href="websql.html">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="">
+    <div class="container">
+        
+        <header>
+            <h1>BlackBox
+            </h1>
+            <div>
+                <ul id="navi">
+    
+                    <li><a class="action" href="home.html">Home</a></li>
+                    <li><a href="AddP.html">Add Products</a></li>
+                    <li><a href="session.html">S.Storage</a></li>                   
+                    <li><a href="websql.html">WebSQL</a></li>
+                    <li><a href="indexedDb.html">IndexDB</a></li>
+                    <li><a href="localstorage.html">LocalStorage</a></li>
+                </ul>
+            </div>
+            <div class="shopping">
+                <img src="image/shopping.svg" alt="Shopping Cart">
+                <span class="quantity">0</span>
+            </div>
+        </header>
+        
+<div class="banner">
+    <h2>Welcome to our Online Store!</h2>
+    <h3 style="color: darkgoldenrod;">Winter Collection</h3>
+    <p>Discover amazing deals and shop your favorite products.</p>
+</div>
+
+<div class="SP">
+    <h2>WINTER COLLECTION</h2>
+</div>
+<div class="search">
+    <input type="text" id="searchInput" placeholder="Search products...">
+    <button onclick="handleSearch()">Search</button>
+</div>
+        <div class="list">
+          
+        </div>
+    </div>
+    <div class="cart">
+        <h1>Cart</h1>
+        <ul class="listCart">
+        </ul>
+        <div class="checkOut">
+            <div class="total">0</div>
+            <div class="closeShopping">Close</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 BlackBox.Com</p>
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>42/3, Road no-07, Block-B, Banashree, Dhaka, Bangladesh</p>
+        <p>Email: BlackBox.info@example.com</p>
+        <p>Phone: +088 01712-646384</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

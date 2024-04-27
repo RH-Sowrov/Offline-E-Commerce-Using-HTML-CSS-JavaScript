@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Storing Data with Session Storage</title>
+<style type="text/css">
+	input[type=text] {
+  width: 300px;
+  text-align:center;
+  box-sizing: border-box;
+  border: 2px solid #300909;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: cornflowerblue;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 20px 30px 20px 40px;
+}
+	button {
+  width: 150px;
+  text-align:center;
+  box-sizing: border-box;
+  border: 2px solid #4f89af;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #ebe7b2;
+  padding: 10px;
+}
+button:hover{
+	background-color: #6599F3;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+if(localStorage) {
+	$(document).ready(function() {
+		$(".save").click(function() {
+			// Get input name
+			var firstName = $("#firstName").val();
+			var lastName = $("#lastName").val();
+			
+			// Store data
+    		sessionStorage.setItem("first_name", firstName,);
+    		sessionStorage.setItem("last_name", lastName,);
+			alert("Your name is saved.");
+		});
+		$(".access").click(function() {
+			// Retrieve data
+    		alert("Assalamu alaykum, " + sessionStorage.getItem("first_name") + " " + sessionStorage.getItem("last_name"));
+		});
+	});
+} else {
+    alert("Sorry, this browser doesn't support local storage.");
+}
+</script>
+</head>
+<body style="background-color: turquoise;">
+    <h1 style="text-align: center;color: white;"><a href="home.html"></a><br>Session Storage</h1>
+    <br><br><br>
+    <div class="abc" style="margin-left: 30%; margin-right: 30%">
+    <form style="text-align: center; width: 100%;">
+    	<label style="color: rgb(161, 52, 52); font-size: larger;">First Name:<br> <input type="text" id="firstName"></label><br><br>
+    	<label style="color: rgb(161, 51, 51); font-size: larger;">Last Name: <br><input type="text" id="lastName"></label><br><br>
+        <button type="button" class="save">Save</button>
+        <button type="button" class="access">Say Assalamu alaykum</button>
+    </form>
+    <br><br><br>
+</div>
+</body>
+</html>
